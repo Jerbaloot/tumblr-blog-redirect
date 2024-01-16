@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Tumblr Blog Redirector",
+  "version": "1.0",
+
+  "description": "Redirects tumblr blogs to their original source.",
+
+  "icons": {
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.tumblr.com/*"],
+      "js": ["tumblr-redirect.js"]
+    }
+  ]
+}
